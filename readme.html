@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raspberry Pi GPIO!</title>
+</head>
+<body>
+    <p>
+        <h1>Raspberry Pi GPIO!</h1>
+        <h2>Getting an led to blink!</h2>
+        <p>
+            In order to get our LED working we must first connect the led to 
+            the pi as shown below:<br>
+            <img src="images/blink_led.png">
+            <br><br>After the led is wired up we can now go ahead and edit the 
+            file titled "gpio.py"<br><br>
+            There is some code for us to fill in before it will work.<br><br>
+            After the code is filled in, uncomment the function blink_led() at the bottom of<br>
+            the file and run it with the command below:<br><br>
+            python3 gpio.py<br><br>
+            Now you should have a blinking LED!<br><br>
+        </p>
+        
+        <h2>Getting an LED to light up when a switch is pressed.</h2>
+        <p>
+            Again we must connect our switch to our pi for it to work, so follow <br>
+            the diagram below to hook it up:<br>
+            <img src="images/led_switch.png">
+            <br><br>After the LED is wired up, fill in any missing code in gpio.py<br>
+            Next comment out the function you previously uncommented, and uncomment the <br>
+            led_on_switch() function.<br>You can again run the program with the command:<br><br>
+            python3 gpio.py<br><br>
+            Yor LED should now light up when the switch is pressed.<br><br>
+        </p>
+
+        <h2>Making a "simon" game</h2>
+        <p>
+            Again we must connect our switches and LEDs to the pi.<br>
+            This time there is consiterably more switches and LEDs to consider.<br>
+            Follow the diagram below to hook it up:<br><br>
+            <img src="images/simon.png"><br><br>
+            **Important** Be sure to double check that you have wired everything <br>
+            correctly or damage may result to the pi!<br><br>
+            Next comment out the function you previously uncommented, and uncomment the <br>
+            simon() function.<br>You can again run the program with the command:<br><br>
+            python3 gpio.py<br><br>
+            You should now be able to play simon!<br><br>
+        </p>
+
+
+</body>
+</html>
